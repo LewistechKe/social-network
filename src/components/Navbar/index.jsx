@@ -16,7 +16,6 @@ import {
     FaClone,
     FaDoorOpen,
     FaHome,
-    FaQuestionCircle,
     FaUsers,
 } from "react-icons/fa";
 
@@ -74,13 +73,6 @@ const Navbar = () => {
             >
                 <FaClone />
                 Posts
-            </Link>
-            <Link
-                to="/trivia"
-                className={`${styles.navLink} ${getActiveClass("/trivia")}`}
-            >
-                <FaQuestionCircle />
-                Trivia
             </Link>
             <span
                 className={`${styles.navLink} ${styles.notActiveLink} ${styles.mobileLink}`}

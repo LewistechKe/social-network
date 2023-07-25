@@ -26,8 +26,8 @@ import { setUser } from "../../slices/authSlice";
 
 const LoginForm = () => {
     const [userInput, setUserInput] = useState({
-        email: "",
-        password: "",
+        Email: "",
+        Password: "",
     });
 
     const inputChangeHandler = (e) => {

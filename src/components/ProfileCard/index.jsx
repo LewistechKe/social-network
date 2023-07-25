@@ -14,7 +14,8 @@ const ProfileCard = () => {
               u.followers.some(
                   (follower) => follower.username === user.username
               )
-          ).length
+          )
+        //   .length
         : "...";
 
     return (
@@ -34,7 +35,7 @@ const ProfileCard = () => {
             <div className={`${styles.statGroup} border-b-2`}>
                 <span className={styles.statTitle}>Followers</span>
                 <span className={styles.statFigure}>
-                    {user.followers.length}
+                    {/* {user.followers.length} */}
                 </span>
             </div>
             <div className={styles.linkContainer}>

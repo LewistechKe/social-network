@@ -5,7 +5,7 @@ import styles from "./styles";
 import PropTypes from "prop-types";
 
 // Icons
-import { FaShareAlt, FaUsers, FaPlay } from "react-icons/fa";
+import { FaShareAlt, FaUsers } from "react-icons/fa";
 
 const Box = ({ details }) => {
     return (
@@ -33,11 +33,6 @@ const LandingPageBoxes = () => {
             icon: <FaUsers className={styles.icon} />,
             title: "Experience Community",
             desc: "Be a part of an awesome community of developers just like you who love coding",
-        },
-        {
-            icon: <FaPlay className={styles.icon} />,
-            title: "Play Tech Trivia",
-            desc: "A fun trivia games with various questions about tech so you have fun whilst learning",
         },
     ];
 

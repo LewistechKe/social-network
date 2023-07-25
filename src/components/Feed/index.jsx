@@ -6,13 +6,11 @@ import ProfileCard from "../ProfileCard";
 import CopyrightCard from "../CopyrightCard";
 import Actions from "../Actions";
 import Posts from "../Posts";
-import TriviaPreview from "../TriviaPreview";
 import UsersToFollow from "../UsersToFollow";
 import WriteAPost from "../WriteAPost";
 import MoreInfoCard from "../MoreInfoCard";
 import Users from "../Users";
 import Profile from "../Profile";
-import Game from "../Game";
 
 // Prop Types
 import PropTypes from "prop-types";
@@ -67,11 +65,6 @@ const Feed = ({ type, user }) => {
                         <Posts username={user ? user.username : ""} />
                     </>
                 )}
-                {type === "trivia" && (
-                    <>
-                        <Game />
-                    </>
-                )}
             </motion.div>
             <motion.div
                 initial={{ opacity: 0 }}
@@ -84,23 +77,12 @@ const Feed = ({ type, user }) => {
             >
                 {(type === "home" || type === "profile") && (
                     <>
-                        <TriviaPreview />
                         <UsersToFollow />
                     </>
                 )}
                 {type === "posts" && (
                     <>
                         <MoreInfoCard />
-                    </>
-                )}
-                {type === "users" && (
-                    <>
-                        <TriviaPreview />
-                    </>
-                )}
-                {type === "trivia" && (
-                    <>
-                        <UsersToFollow />
                     </>
                 )}
             </motion.div>
